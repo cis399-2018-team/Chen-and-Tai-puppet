@@ -3,7 +3,7 @@ class sshd {
 			"openssh-server": ensure => installed;
 	}
 
-	file { " /etc/sshd.conf":
+	file { "/etc/ssh/sshd.conf":
 			source => [
 					# from modules/sshd/files/$hostname/sshd.conf
 					"puppet:///modules/sshd/$hostname/sshd.conf",
@@ -25,7 +25,7 @@ class sshd {
 			# changes to configuration cause service restart
 			subscribe => File["/etc/ssh/sshd_config"],
 			# notifying sshd when it changes
-			notify    => [ File["/etc/sshd.conf"] ],
+			notify    => [ File["/etc/ssh/sshd.conf"] ],
 	}
 
 	

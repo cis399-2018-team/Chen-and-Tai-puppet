@@ -21,9 +21,8 @@ class sshd {
 			# restart service if it is not running
 			ensure	  => running,
 			# changes to configuration cause service restart
+			require   => [ Package["openssh-server"], File["/etc/ssh/sshd_config"] ],
 			subscribe => File["/etc/ssh/sshd_config"],
-			# notifying sshd when it changes
-			notify    => [ File["/etc/ssh/sshd_config"] ],
 	}
 
 	

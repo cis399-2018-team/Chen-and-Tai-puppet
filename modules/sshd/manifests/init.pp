@@ -5,8 +5,8 @@ class sshd {
 
 	file { "/etc/ssh/sshd_config":
 			source => [
-					# from modules/ssh/files/ssh.conf
-					"puppet:///modules/sshd/files/sshd_config",
+					# from modules/sshd/sshd.conf
+					"puppet:///modules/sshd/sshd_config",
 			],
 			mode   => 444,
 			owner  => root,

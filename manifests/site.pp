@@ -4,7 +4,7 @@ node ip-10-0-3-50 {
 	include apache
 }
 
-node ip-10-0-3-20 {
+node ip-10-0-3-37 {
 	include sshd
 	include apache
 }

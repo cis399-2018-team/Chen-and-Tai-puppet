@@ -11,7 +11,6 @@ node ip-10-0-3-20 {
 # update /etc/puppet on puppet master (use puppet master node name)
 node ip-10-0-3-167 {
 	include sshd
-	include apache
 	
 	cron { "puppet update":
 	    command => "cd /etc/puppet && git pull -q origin master",

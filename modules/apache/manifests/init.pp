@@ -15,7 +15,7 @@ class apache {
 
 	service { "apache2":
 			ensure => running,
-			enable => ture,
+			enable => true,
 			hasstatus => true,
 			hasrestart => true,
 			require => [Package["apache2"], File["/etc/apache2/apache2.conf"]],

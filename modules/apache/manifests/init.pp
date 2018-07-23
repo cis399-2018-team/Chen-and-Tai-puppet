@@ -8,11 +8,11 @@ class apache {
 			mode => 644,
 			owner => root,
 			group => root,
-			require => Package["appache2"],
+			require => Package["apache2"],
 
 	}
 
-	service { "appache2":
+	service { "apache2":
 			ensure => running,
 			enable => ture,
 			require => [Package["apache2"], File["/etc/apache2/apache2.conf"]],

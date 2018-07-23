@@ -1,5 +1,5 @@
 # injoker_2
-node ip-10.0.3.50 {
+node ip-10-0-3-50 {
 	include sshd
 	include apache
 }

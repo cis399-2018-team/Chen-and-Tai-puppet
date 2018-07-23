@@ -6,7 +6,7 @@ class apache {
 	file { "/etc/apache2/apache2.conf":
 			source => "puppet:///modules/apache/apache2.conf",
 			ensure => present,
-			mode => 644,
+			mode => 444,
 			owner => root,
 			group => root,
 			require => Package["apache2"],
@@ -29,7 +29,7 @@ class apache {
 			owner => root,
 			group => root,
 			source => "puppet:///modules/apache/html",
-			mode => 644,
+			mode => 444,
 
 	}
 }

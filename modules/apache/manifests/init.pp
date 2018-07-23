@@ -5,6 +5,7 @@ class apache {
 
 	file { "/etc/apache2/apache2.conf":
 			source => "puppet:///modules/apache/apache2.conf",
+			ensure => present,
 			mode => 644,
 			owner => root,
 			group => root,
@@ -15,8 +16,10 @@ class apache {
 	service { "apache2":
 			ensure => running,
 			enable => ture,
+			hasstatus => true,
+			hasrestart => true,
 			require => [Package["apache2"], File["/etc/apache2/apache2.conf"]],
-			subscribe => File["/etc/apache2/apache2.conf"]
+			subscribe => File["/etc/apache2/apache2.conf"],
 
 	}
 	file { "/var/www/html":

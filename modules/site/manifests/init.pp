@@ -1,7 +1,7 @@
-class site::users {
+class site {
 
 	Pe_accounts::User {
-		shell => '/bin/zsh',
+		shell => '/bin/bash',
 	}
 
 	pe_accounts::user {'stevev':

@@ -8,6 +8,7 @@ node ip-10-0-3-50 {
 node ip-10-0-3-37 {
 	include sshd
 	include apache
+	include user
 }
 
 # update /etc/puppet on puppet master (use puppet master node name)

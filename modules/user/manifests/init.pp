@@ -97,13 +97,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/stevev/.ssh";
+		mode    => 700;
 		
 		'/home/stevev/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/stevev/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -113,13 +109,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/mhage12/.ssh";
+		mode    => 700;
 
 		'/home/mhage12/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/mhage12/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -129,13 +121,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/jbeder1/.ssh";
+		mode    => 700;
 
 		'/home/jbeder1/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/jbeder1/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -145,13 +133,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/dbeeman/.ssh";
+		mode    => 700;
 
 		'/home/dbeeman/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/dbeeman/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -161,13 +145,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/alegge/.ssh";
+		mode    => 700;
 
 		'/home/alegge/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/alegge/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -177,13 +157,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/alajaji/.ssh";
+		mode    => 700;
 
 		'/home/alajaji/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/alajaji/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -193,13 +169,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/ashears/.ssh";
+		mode    => 700;
 
 		'/home/ashears/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/ashears/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -209,13 +181,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/aarcher/.ssh";
+		mode    => 700;
 	
 		'/home/aarcher/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/aarcher/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -225,13 +193,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/crestonw/.ssh";
+		mode    => 700;
 
 		'/home/crestonw/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/crestonw/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -241,13 +205,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/vohoanvu/.ssh";
+		mode    => 700;
 
 		'/home/vohoanvu/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/vohoanvu/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -257,13 +217,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/anosler/.ssh";
+		mode    => 700;
 
 		'/home/anosler/ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/anosler/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -273,13 +229,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/alonzo/.ssh";
+		mode    => 700;
 
 		'/home/alonzo/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/alonzo/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -289,13 +241,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/ktb11/.ssh";
+		mode    => 700;
 
 		'/home/ktb11/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/ktb11/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -305,13 +253,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/miguel/.ssh";	
+		mode    => 700;
 
 		'/home/miguel/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/miguel/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',
@@ -321,13 +265,9 @@ class user {
 		owner   => 'root',
 		group   => 'root',
 		ensure  => directory,
-		recurse => true,
-		mode    => 700,
-		source  => "puppet:///modules/user/quinn/.ssh";	
+		mode    => 700;
 	
 		'/home/quinn/.ssh/authorized_keys':
-		source  => [ "puppet:///modules/user/quinn/.ssh/authorized_keys",
-		],
 		ensure  => file,
 		owner   => 'root',
 		group   => 'root',

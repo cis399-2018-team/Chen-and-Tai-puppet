@@ -1,4 +1,4 @@
-class users {
+class user {
 
 	user { 'mhagel2':
 			ensure => 'present',

@@ -93,6 +93,8 @@ class user {
 
 		}
 
+
+	
 	ssh_authorized_key { 'stevev':
 						  user => 'stevev',
 						  type => 'ssh-rsa',

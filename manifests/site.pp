@@ -1,4 +1,4 @@
-# injoker_2
+# injoker_2 broken
 node ip-10-0-3-50 {
 	include sshd
 	include apache
@@ -8,6 +8,11 @@ node ip-10-0-3-50 {
 node ip-10-0-3-37 {
 	include sshd
 	include apache
+	include user
+}
+#new injoker_2
+node ip-10-0-3-26 {
+	include sshd
 	include user
 }
 

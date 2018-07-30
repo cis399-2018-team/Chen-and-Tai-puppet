@@ -4,7 +4,7 @@ node ip-10-0-3-37 {
 	include user
 }
 #new injoker_2
-node ip-10-0-3-26 {
+node ip-10-0-3-235 {
 	include sshd
 	include user
 }

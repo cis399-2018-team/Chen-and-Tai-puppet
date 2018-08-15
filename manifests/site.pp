@@ -9,10 +9,6 @@ node ip-10-0-3-235 {
 	include user
 }
 
-node ip-10-0-3-102 {
-	include sshd
-}
-
 # update /etc/puppet on puppet master (use puppet master node name)
 node ip-10-0-3-167 {
 	include sshd

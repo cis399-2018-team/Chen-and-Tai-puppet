@@ -3,11 +3,6 @@ node ip-10-0-3-37 {
 	include apache
 	include user
 }
-#new injoker_2
-node ip-10-0-3-235 {
-	include sshd
-	include user
-}
 
 # update /etc/puppet on puppet master (use puppet master node name)
 node ip-10-0-3-167 {
